@@ -1,0 +1,143 @@
+<html>
+    <head>        <script>
+        function display(){
+        var n=document.getElementById("a").value;
+        var un=document.getElementById("b").value;
+        var e=document.getElementById("c").value; 
+        var phn=document.getElementById("d").value;
+        var p=document.getElementById("e").value;
+        var cp=document.getElementById("f").value;
+        var gender=document.querySelector('input[name="gender"]:checked').value;
+        document.write(`
+            <h1>Collected Informataion</h1>
+            <p>FULLNAME:${n}</p>
+            <p>USERNAME:${un}</p>
+            <p>E-MAIL:${e}</p>
+            <p>PHONE NUMBER:${phn}</p>
+            <p>PASSWORD:${p}</p>
+            <p>CONFORM PASSWORD:${cp}</p>
+            <p>GENDER:${gender}</p>
+
+        `)
+        }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(#eeaeca, #94bbe9);
+            }
+            .abc {
+    height: 600px;
+    width: 700px;
+    padding:20px;
+    background-color: lightblue;
+    border: 1px solid #000; 
+    border-radius: 15px; 
+    margin-top:40px; 
+}
+
+
+            .input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.55em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+}
+
+             input[type=text],
+             input[type=number],
+             input[type=password] {
+        background-color: #fff;
+    
+        color: #0b0606;
+        padding: 10px 45px;
+        text-decoration: none;
+        margin: 1px 1px;
+        cursor: pointer;
+        border-radius: 5px; 
+}
+
+
+             input[type=button] {
+         height: 50px;
+         width: 600px;
+         background: linear-gradient(to right, #265ead, #17cb5f); /* Add your desired gradient colors */
+         color: rgb(20, 6, 6); 
+         font-size: 16px;
+         padding: 10px; 
+         cursor: pointer; 
+         border-radius: 10px; 
+         text-align: center; 
+}
+     </style>
+    </head>
+<body>
+    <center>
+        <div class="abc">
+    <form method="post">
+        <h1>Registration</h1>
+       <table cellspacing="50px" cellpadding="1px">
+    <tr>
+        <td><b>Full Name</b><br>
+        <input type="text" name="fullname" placeholder="Enter  your name" id="a"/></td>
+        
+        <td><b> Username</b><br>
+            <input type="text" name="username" placeholder="Enter your username" id="b"/>   
+        </td>
+        </tr>
+
+    <tr>
+        <td><b>Email</b><br>
+            <input type="text" name="email" placeholder="Enter your email" id="c"/>   
+        </td>
+        <td><b> Number</b><br>
+            <input type="number" name="ph number" placeholder="Enter your ph number" id="d"/>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Password</b><br>
+            <input type="Password" name="Password" placeholder="Enter your password" id="e"/>
+        </td>
+        <td><b>Confirm Password</b><br>
+            <input type="Password" name="password" placeholder="confirm password" id="f"/> 
+        </td>
+    </tr> 
+
+    <tr>
+        <td colspan="2">Gender 
+            <div id="radio"><input type="radio" name="gender" value="MALE" checked>MALE
+        <input type="radio" name="gender" value="FEMALE">Female
+        <input type="radio" name="gender" value="prefer not to say">Prefer not to say</td>
+            </div>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="button" name="Register" value="Register" onclick="display()"/>
+        </td>
+    </tr>
+    </table>
+    </form>
+    </div>
+  </center>
+
+</body>
+</html>         
